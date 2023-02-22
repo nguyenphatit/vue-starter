@@ -6,14 +6,22 @@ export default createRouter({
   routes: [
     {
       path: '/',
+      name: 'Home',
       component: Home,
     },
     {
+      path: '/movie/:id',
+      name: 'Movie Detail',
+      component: () => import('@/views/MovieDetail.vue'),
+    },
+    {
       path: '/about',
+      name: 'About',
       component: () => import('@/views/About.vue'),
     },
     {
       path: '/contact',
+      name: 'Contact',
       component: () => import('@/views/Contact.vue'),
     },
   ],
