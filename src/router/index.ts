@@ -10,7 +10,7 @@ export default createRouter({
       component: Home,
     },
     {
-      path: '/movie/:id',
+      path: '/movies/:id',
       name: 'Movie Detail',
       component: () => import('@/views/MovieDetail.vue'),
     },

@@ -9,7 +9,7 @@ const movies = ref<Array<iMovie>>([]);
 const hostest = ref<iMovie>();
 
 onMounted(async () => {
-    const res = await axios.get(`${import.meta.env.VITE_API_URL}trending/movie/day?api_key=${import.meta.env.VITE_API_KEY}&language=${store.language}`);
+    const res = await axios.get(`${import.meta.env.VITE_API_URL}trending/movie/week?api_key=${import.meta.env.VITE_API_KEY}&language=${store.language}`);
     movies.value = res.data.results;
     hostest.value = res.data.results[0];
 })

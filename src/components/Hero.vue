@@ -12,15 +12,13 @@ const props = defineProps<{ data: iMovie }>();
                 class="uppercase font-bold font-serif text-yellow-50 mb-4 mx-4 sm:mx-auto text-4xl leading-snug md:text-6xl md:leading-snug lg:text-8xl lg:leading-snug xl:text-9xl xl:leading-snug">
                 {{ props?.data?.title }}
             </h1>
-            <p class="mx-4 sm:mx-0 max-w-screen-lg">{{ props?.data?.overview }}</p>
         </div>
     </div>
 </template>
 
-<style>
+<style scoped>
 .jumbotron {
     background-color: bisque;
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
