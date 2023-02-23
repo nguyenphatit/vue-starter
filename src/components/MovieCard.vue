@@ -6,7 +6,7 @@ const props = defineProps<{ data: iMovie }>();
 <template>
     <RouterLink :to="`/movies/${props.data?.id}`">
         <div class="card cursor-pointer rounded-3xl flex justify-end flex-col px-4 py-4 relative"
-            :style="{ 'background-image': `url('https://image.tmdb.org/t/p/w500/${props.data?.backdrop_path}')` }">
+            :style="{ 'background-image': `url('https://image.tmdb.org/t/p/w500${props.data?.backdrop_path}')` }">
             <div class="drop-background"></div>
             <div class="z-10">
                 <h1 class="uppercase font-bold text-lg">{{ props.data?.title }}</h1>

@@ -45,7 +45,7 @@ export default {
         <div class="p-6">
             <router-link class="ml-6" to="/">Home</router-link>
             <a class="ml-6" href="https://tourdeforce.netlify.app/">About</a>
-            <span class="ml-6 cursor-pointer" @click="changeLanguage">{{ store.language === 'en-US' ? 'Tiếng Việt' : 'English' }}</span>
+            <span class="ml-6 cursor-pointer" @click="changeLanguage">{{ store.language === 'en-US' ? 'vi' : 'en' }}</span>
         </div>
     </nav>
 </template>
